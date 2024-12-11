@@ -20,7 +20,7 @@ export default function LoginModal({ isOpen, onClose }) {
 
     const handleSignup = async () => {
         try {
-            const response = await axios.post("http://localhost:6969/auth/signup", formData, {
+            const response = await axios.post("https://eshanivaccationbackend.vercel.app/auth/signup", formData, {
                 withCredentials: true,
             });
             setMessage(response.data.message);
@@ -32,7 +32,7 @@ export default function LoginModal({ isOpen, onClose }) {
 
     const googlelogin = async () => {
         try {
-          const url = "http://localhost:6969/auth/google"; 
+          const url = "https://eshanivaccationbackend.vercel.app/auth/google"; 
           window.location.href = url;
         } catch (error) {
           console.error('Error making the API call:', error);
