@@ -30,7 +30,7 @@ const Listing = () => {
 
                     <div className="md:basis-1/2 lg:basis-1/5" key={properties._id}  onClick={detailPage}>
                         <div className="max-w-xs mx-auto">
-                            <div className="relative bg-indigo-700 shadow-lg rounded-lg shadow-lg overflow-hidden h-[400px]" data-id={properties._id} style={{ backgroundImage: `url(http://localhost:6969/${properties.mainImageFile})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                            <div className="relative bg-indigo-700 shadow-lg rounded-lg shadow-lg overflow-hidden h-[400px]" data-id={properties._id} style={{ backgroundImage: `url(https://eshanivaccationbackend.vercel.app/${properties.mainImageFile})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
                                 <div className="bg-[rgba(0,0,0,0.5)] absolute bottom-2 p-2 w-full">
                                     <div >
                                         <div className="text-xs uppercase text-white tracking-widest mb-2 font-extrabold">
