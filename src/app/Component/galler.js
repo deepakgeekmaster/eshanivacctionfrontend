@@ -41,7 +41,7 @@ const PropertyGallery = ({ property }) => {
               <div key={index + 1}>
                 <Image
                   src={`https://eshanivaccationbackend.vercel.app/${image}`}
-                  alt={`image-${index + 1}`} // Adjust alt text to match the correct image index
+                  alt={`image-${index + 1}`} 
                   className="object-cover w-full h-full"
                   width={300}
                   height={300}
