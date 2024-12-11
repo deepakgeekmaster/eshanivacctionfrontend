@@ -8,7 +8,7 @@ const UseAuth = () => {
     useEffect(() => {
         const fetchUser = async () => {
             try {
-                const response = await axios.get('http://localhost:6969/auth/check', {
+                const response = await axios.get('https://eshanivaccationbackend.vercel.app/auth/check', {
                     withCredentials: true, 
                 });
                 setUser(response.data.user);
