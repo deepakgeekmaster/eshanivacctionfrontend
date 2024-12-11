@@ -3,7 +3,6 @@ import { IoMdClose } from "react-icons/io";
 import CountryDropdown from "./countryDropdown";
 import { FcGoogle } from "react-icons/fc";
 import axios from "axios";
-import useAuth from "@/hooks/useAuth";
 
 export default function LoginModal({ isOpen, onClose }) {
 
@@ -26,7 +25,6 @@ export default function LoginModal({ isOpen, onClose }) {
             });
             setMessage(response.data.message);
             onClose();
-            useAuth();
         } catch (error) {
             setMessage(error.response?.data?.error || "Something went wrong!");
         }
