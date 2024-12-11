@@ -8,7 +8,7 @@ const Listing = () => {
     useEffect(() => {
         const fetchProperties = async () => {
             try {
-                const res = await fetch('http://localhost:6969/api/property/get');
+                const res = await fetch('https://eshanivaccationbackend.vercel.app/api/property/get');
                 const data = await res.json();
                 setProperty(data);
             } catch (error) {
