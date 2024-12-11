@@ -110,7 +110,7 @@ export default function LoginModal({ isOpen, onClose }) {
                 </div>
                 <div className="flex justify-center flex-wrap py-2" >
                     {/* Google Button */}
-                    <a href="#" className="w-full text-center" onClick={googlelogin}>
+                    <button href="#" className="w-full text-center" onClick={googlelogin}>
                         <div className="flex items-center w-72 h-12 mx-auto rounded border-2 transition bg-white hover:shadow-lg">
                             <div className="p-3">
                                 <FcGoogle />
@@ -118,7 +118,7 @@ export default function LoginModal({ isOpen, onClose }) {
                             </div>
                             <p className="w-full text-center text-gray-600 font-medium font-roboto">Sign in with Google</p>
                         </div>
-                    </a>
+                    </button>
 
                     {/* Facebook Button */}
                     {/*<a href="#" className="w-full text-center mt-4">
