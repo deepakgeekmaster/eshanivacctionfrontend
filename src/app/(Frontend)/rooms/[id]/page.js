@@ -31,7 +31,7 @@ export default function Detail({ params }) {
   useEffect(() => {
     const fetchProperties = async () => {
       try {
-        const res = await fetch(`http://localhost:6969/api/property/get/${id}`);
+        const res = await fetch(`https://eshanivaccationbackend.vercel.app/api/property/get/${id}`);
         const data = await res.json();
         setProperty(data);
       } catch (error) {
@@ -62,7 +62,7 @@ export default function Detail({ params }) {
 
   const handleReserveClick = async () => {
     try {
-      const response = await fetch("http://localhost:6969/book/create-checkout-session", {
+      const response = await fetch("https://eshanivaccationbackend.vercel.app/book/create-checkout-session", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
