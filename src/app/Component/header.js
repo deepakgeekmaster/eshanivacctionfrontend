@@ -5,10 +5,10 @@ import Link from "next/link";
 import { FaSearch } from "react-icons/fa";
 import { useState } from "react";
 import LoginModal from "./loginModal";
-import useAuth from "@/hooks/useAuth";
+import UseAuth from "@/hooks/useAuth";
 const Header = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const { user, loading } = useAuth();
+    const { user, loading } = UseAuth();
     const handleButtonClick = () => {
         setIsModalOpen(true);
     };
