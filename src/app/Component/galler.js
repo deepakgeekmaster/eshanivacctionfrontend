@@ -14,7 +14,7 @@ const PropertyGallery = ({ property }) => {
         <div className="flex flex-1 flex-col gap-2">
           <div className="flex">
             <Image
-              src={`http://localhost:6969/${mainimage}`}
+              src={`https://eshanivaccationbackend.vercel.app/${mainimage}`}
               alt="image"
               className="w-full"
               layout="intrinsic"
@@ -25,7 +25,7 @@ const PropertyGallery = ({ property }) => {
           </div>
           <div className="flex">
             <Image
-              src={`http://localhost:6969/${sliderImages[0]}`}
+              src={`https://eshanivaccationbackend.vercel.app/${sliderImages[0]}`}
               alt={`image-alt`} // Adjust alt text to match the correct image index
               className="object-cover w-full h-full"
               width={300}
@@ -40,7 +40,7 @@ const PropertyGallery = ({ property }) => {
             {sliderImages.slice(1).map((image, index) => (
               <div key={index + 1}>
                 <Image
-                  src={`http://localhost:6969/${image}`}
+                  src={`https://eshanivaccationbackend.vercel.app/${image}`}
                   alt={`image-${index + 1}`} // Adjust alt text to match the correct image index
                   className="object-cover w-full h-full"
                   width={300}
