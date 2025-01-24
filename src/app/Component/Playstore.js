@@ -18,11 +18,11 @@ const Playstore = () => {
                     </div>
 
                     <div className="app-icons flex justify-center space-x-4 mt-4 md:mt-0">
-                        <a href="https://www.kobinet.com.tr/" target="_blank" className="market-btn apple-btn" role="button">
+                        <a href="" target="_blank" className="market-btn apple-btn" role="button">
                             <span className="market-button-subtitle">Download on the</span>
                             <span className="market-button-title">App Store</span>
                         </a>
-                        <a href="https://www.kobinet.com.tr/" target="_blank" className="market-btn google-btn" role="button">
+                        <a href="" target="_blank" className="market-btn google-btn" role="button">
                             <span className="market-button-subtitle">Download on the</span>
                             <span className="market-button-title">Google Play</span>
                         </a>
